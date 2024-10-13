@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - ST. Vincent Pallotti College of Engineering and Technology</title>
+    <link rel="stylesheet" href="css/styles.css"> <!-- Link to your CSS file -->
+    <style>
+        /* General Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4; /* Light background color */
+            color: #333; /* Darker text color for readability */
+        }
+
+        /* Header Section */
+        header {
+            background: #333; /* Dark background */
+            color: white; /* Light text color */
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 28px; /* Adjusted font size */
+            margin-bottom: 10px; /* Space below the title */
+        }
+
+        nav ul {
+            list-style: none; /* Remove bullet points */
+            padding: 0; /* Remove padding */
+        }
+
+        nav ul li {
+            display: inline; /* Horizontal list */
+            margin: 0 15px; /* Space between links */
+        }
+
+        nav ul li a {
+            color: white; /* Link color */
+            text-decoration: none; /* Remove underline */
+            font-weight: bold; /* Bold text */
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline; /* Underline on hover */
+        }
+
+        /* Contact Section */
+        #contact {
+            padding: 50px 20px;
+            background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white background */
+            max-width: 600px; /* Limit width for readability */
+            margin: 20px auto; /* Center the section */
+            border-radius: 8px; /* Rounded corners */
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%; /* Full width */
+            padding: 10px; /* Padding for inputs */
+            margin: 10px 0; /* Space between inputs */
+            border: 1px solid #ccc; /* Border for inputs */
+            border-radius: 4px; /* Rounded corners */
+        }
+
+        button {
+            background-color: #333; /* Dark background for button */
+            color: white; /* White text */
+            padding: 10px 15px; /* Padding for button */
+            border: none; /* No border */
+            border-radius: 4px; /* Rounded corners */
+            cursor: pointer; /* Pointer cursor */
+            font-size: 16px; /* Font size */
+        }
+
+        button:hover {
+            background-color: #555; /* Darker background on hover */
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #333;
+            color: white;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 24px; /* Smaller title on small screens */
+            }
+
+            #contact h2 {
+                font-size: 24px; /* Smaller heading on small screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <h1>ST. Vincent Pallotti College of Engineering and Technology</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="contact.html">Contact</a></li> <!-- Updated Link -->
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>If you have any questions or need more information, feel free to reach out to us through the form below:</p>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 ST. Vincent Pallotti College of Engineering and Technology. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

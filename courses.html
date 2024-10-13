@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses - ST. Vincent Pallotti College of Engineering and Technology</title>
+    <link rel="stylesheet" href="css/styles.css"> <!-- Link to your CSS file -->
+    <style>
+        /* General Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4; /* Light background color */
+            color: #333; /* Darker text color for readability */
+        }
+
+        /* Header Section */
+        header {
+            background: #333; /* Dark background */
+            color: white; /* Light text color */
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 28px; /* Adjusted font size */
+            margin-bottom: 10px; /* Space below the title */
+        }
+
+        nav ul {
+            list-style: none; /* Remove bullet points */
+            padding: 0; /* Remove padding */
+        }
+
+        nav ul li {
+            display: inline; /* Horizontal list */
+            margin: 0 15px; /* Space between links */
+        }
+
+        nav ul li a {
+            color: white; /* Link color */
+            text-decoration: none; /* Remove underline */
+            font-weight: bold; /* Bold text */
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline; /* Underline on hover */
+        }
+
+        /* Courses Section */
+        #courses {
+            padding: 50px 20px;
+            background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white background */
+            max-width: 800px; /* Limit width for readability */
+            margin: 20px auto; /* Center the section */
+            border-radius: 8px; /* Rounded corners */
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+        }
+
+        .course-list {
+            margin-top: 20px; /* Space above the list */
+        }
+
+        .course-item {
+            padding: 10px;
+            border-bottom: 1px solid #ccc; /* Separator between items */
+            margin-bottom: 10px; /* Space between items */
+        }
+
+        .course-item:last-child {
+            border-bottom: none; /* Remove border for the last item */
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #333;
+            color: white;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 24px; /* Smaller title on small screens */
+            }
+
+            #courses h2 {
+                font-size: 24px; /* Smaller heading on small screens */
+            }
+
+            .course-item {
+                font-size: 16px; /* Smaller font size for courses */
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <h1>ST. Vincent Pallotti College of Engineering and Technology</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="courses.html">Courses</a></li> <!-- Updated Link -->
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Courses Section -->
+    <section id="courses">
+        <h2>Our Courses</h2>
+        <p>At ST. Vincent Pallotti College of Engineering and Technology, we offer a wide range of courses to equip you with the skills necessary for your future career. Below is a list of our available courses:</p>
+        <div class="course-list">
+            <div class="course-item">
+                <strong>Bachelor of Engineering (B.E.) in Computer Science</strong>
+            </div>
+            <div class="course-item">
+                <strong>Bachelor of Engineering (B.E.) in Electronics and Communication</strong>
+            </div>
+            <div class="course-item">
+                <strong>Bachelor of Engineering (B.E.) in Mechanical Engineering</strong>
+            </div>
+            <div class="course-item">
+                <strong>Bachelor of Engineering (B.E.) in Civil Engineering</strong>
+            </div>
+            <div class="course-item">
+                <strong>Master of Engineering (M.E.) in Computer Science</strong>
+            </div>
+            <div class="course-item">
+                <strong>Master of Engineering (M.E.) in Structural Engineering</strong>
+            </div>
+            <div class="course-item">
+                <strong>Diploma in Engineering</strong>
+            </div>
+            <div class="course-item">
+                <strong>Ph.D. in Engineering</strong>
+            </div>
+	    <div class="course-item">
+                <strong>Bachelor of Engineering (B.E.) in Cyber Security</strong>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 ST. Vincent Pallotti College of Engineering and Technology. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ST. Vincent Pallotti College of Engineering and Technology</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+    <style>
+        /* General Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4; /* Light background color */
+            color: #333; /* Darker text color for readability */
+            position: relative; /* Set position relative for watermark */
+        }
+
+        /* Watermark */
+        .watermark {
+            position: absolute;
+            top: 50%; /* Center vertically */
+            left: 50%; /* Center horizontally */
+            transform: translate(-50%, -50%); /* Offset to truly center */
+            opacity: 0.1; /* Light opacity for watermark effect */
+            pointer-events: none; /* Make it non-interactive */
+            z-index: -1; /* Behind all other content */
+        }
+
+        /* Header Section */
+        header {
+            background: #333; /* Dark background */
+            color: white; /* Light text color */
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Logo Image Style */
+        .header-logo {
+            max-width: 1000px; /* Adjust as necessary */
+            height: auto; /* Keep aspect ratio */
+        }
+
+        nav ul {
+            list-style: none; /* Remove bullet points */
+            padding: 0; /* Remove padding */
+        }
+
+        nav ul li {
+            display: inline; /* Horizontal list */
+            margin: 0 15px; /* Space between links */
+        }
+
+        nav ul li a {
+            color: white; /* Link color */
+            text-decoration: none; /* Remove underline */
+            font-weight: bold; /* Bold text */
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline; /* Underline on hover */
+        }
+
+        /* Home Section */
+        #home {
+            padding: 50px 20px;
+            background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white background */
+            max-width: 800px; /* Limit width for readability */
+            margin: 20px auto; /* Center the section */
+            border-radius: 8px; /* Rounded corners */
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+            text-align: center; /* Center the text */
+        }
+
+        .home-content h2 {
+            font-size: 32px; /* Larger font for the heading */
+            margin-bottom: 20px; /* Space below the heading */
+        }
+
+        .home-content p {
+            margin-bottom: 15px; /* Space between paragraphs */
+            font-size: 18px; /* Font size for better readability */
+            line-height: 1.8; /* Line height for better spacing */
+        }
+
+        .btn {
+            display: inline-block; /* Make button inline-block */
+            padding: 10px 20px; /* Button padding */
+            background-color: #333; /* Button background */
+            color: white; /* Button text color */
+            text-decoration: none; /* Remove underline */
+            border-radius: 5px; /* Rounded corners */
+            transition: background-color 0.3s ease; /* Transition for hover effect */
+        }
+
+        .btn:hover {
+            background-color: #555; /* Darker shade on hover */
+        }
+
+        /* Login Section */
+        #login {
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            max-width: 400px; /* Limit width for readability */
+            margin: 20px auto; /* Center the section */
+            border-radius: 8px; /* Rounded corners */
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+            text-align: center; /* Center the text */
+        }
+
+        #login h2 {
+            margin-bottom: 20px; /* Space below the heading */
+        }
+
+        #login input[type="text"],
+        #login input[type="password"] {
+            width: 80%; /* Full width */
+            padding: 10px; /* Padding inside input */
+            margin: 10px 0; /* Margin between inputs */
+            border: 1px solid #ccc; /* Light border */
+            border-radius: 4px; /* Rounded corners */
+        }
+
+        #login input[type="submit"] {
+            background-color: #333; /* Button background */
+            color: white; /* Button text color */
+            border: none; /* Remove border */
+            padding: 10px 15px; /* Button padding */
+            border-radius: 5px; /* Rounded corners */
+            cursor: pointer; /* Pointer cursor on hover */
+        }
+
+        #login input[type="submit"]:hover {
+            background-color: #555; /* Darker shade on hover */
+        }
+
+        /* Footer Section */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #333;
+            color: white;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 24px; /* Smaller title on small screens */
+            }
+
+            .home-content h2 {
+                font-size: 24px; /* Smaller heading on small screens */
+            }
+
+            .home-content p {
+                font-size: 16px; /* Smaller font size for paragraphs */
+            }
+
+            #login {
+                max-width: 90%; /* Full width on small screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Watermark Section -->
+    <img src="C:\Users\prash\OneDrive\Desktop\MP2\images\prashi.jpg" alt="Pallotti Logo" class="watermark"> <!-- Watermark Logo -->
+    
+    <!-- Header Section -->
+    <header>
+        <img src="C:\Users\prash\OneDrive\Desktop\MP2\images\prashi.jpg" alt="ST. Vincent Pallotti College of Engineering and Technology" class="header-logo"> <!-- Logo Image -->
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="contact.html">Contact</a></li> <!-- Link to Contact Page -->
+                <li><a href="student_dashboard.html">Student Dashboard</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home">
+        <div class="home-content">
+            <h2>Welcome to ST. Vincent Pallotti College of Engineering and Technology</h2>
+            <p>Where your journey toward a successful future begins. Your future starts here. Join one of the leading colleges in education and research as we commit to shaping innovative minds and fostering excellence.</p>
+            <p>At SVPCET, we offer a dynamic learning environment equipped with cutting-edge technology, state-of-the-art laboratories, and a highly qualified faculty dedicated to nurturing your potential.</p>
+            <p>Whether you aspire to be an engineer, a researcher, or a leader in the technological world, our comprehensive programs and vibrant campus life provide the perfect foundation for your personal and professional growth.</p>
+            <a href="about.html" class="btn">Learn More</a> <!-- Updated Link -->
+        </div>
+    </section>
+
+    <!-- Login Section -->
+    <section id="login">
+        <h2>Login</h2>
+        <div>
+            <h3>Student Login</h3>
+            <form id="studentLoginForm" onsubmit="return handleStudentLogin(event)">
+                <input type="text" name="student_id" placeholder="Student ID" required>
+                <input type="password" name="student_password" placeholder="Password" required>
+                <input type="submit" value="Login">
+            </form>
+        </div>
+        <div>
+            <h3>Admin Login</h3>
+            <form id="adminLoginForm" onsubmit="return handleAdminLogin(event)">
+                <input type="text" name="admin_id" placeholder="Admin ID" required>
+                <input type="password" name="admin_password" placeholder="Password" required>
+                <input type="submit" value="Login">
+            </form>
+        </div>
+    </section>
+
+    <script>
+        function handleStudentLogin(event) {
+            event.preventDefault(); // Prevent form submission
+
+            // Get the student ID from the input
+            const studentId = event.target.student_id.value;
+            
+            // Redirect to the student dashboard, passing the student ID
+            window.location.href = `student_dashboard.html?studentId=${studentId}`; // Update with your actual URL
+        }
+
+        function handleAdminLogin(event) {
+            event.preventDefault(); // Prevent form submission
+            // Redirect to admin dashboard (implement as needed)
+            window.location.href = 'admin_dashboard.html'; // Update with your actual URL
+        }
+    </script>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 ST. Vincent Pallotti College of Engineering and Technology. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

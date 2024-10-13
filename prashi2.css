@@ -1,0 +1,103 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4; /* Light background color */
+}
+
+/* About Section */
+#about {
+    padding: 50px 20px;
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white background */
+    background-image: url('../images/father.jpg'); /* Correct path to the image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    background-size: cover; /* Cover the entire section */
+    max-width: 800px; /* Maximum width for better layout */
+    margin: 20px auto; /* Center the section */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+}
+
+
+@keyframes fadeIn {
+    to {
+        opacity: 1; /* End state */
+    }
+}
+
+#about::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('images') no-repeat center center; /* Ensure the correct path to the image */
+    background-size: cover; /* Ensure it covers the area */
+    opacity: 0.25; /* Control the opacity for the watermark effect */
+    z-index: 0; /* Ensure it's behind the text */
+}
+
+.about-content {
+    position: relative; /* To ensure text is above the watermark */
+    display: flex; /* Flexbox layout */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    z-index: 1; /* Ensure this is above the watermark */
+    transform: translateY(20px); /* Start slightly lower */
+    animation: slideIn 0.5s forwards; /* Slide-in animation */
+}
+
+@keyframes slideIn {
+    to {
+        transform: translateY(0); /* End state */
+    }
+}
+
+.about-content h2, 
+.about-content h3, 
+.about-content p {
+    max-width: 800px; /* Set a max-width for better readability */
+    margin: 0 auto; /* Center the block */
+}
+
+.about-content h2 {
+    font-size: 24px; /* Size for headings */
+    margin-bottom: 20px; /* Space below heading */
+}
+
+.about-content p {
+    font-size: 18px; /* Font size for better readability */
+    line-height: 1.8; /* Line height for better spacing */
+    margin-bottom: 15px; /* Space below paragraphs */
+    transition: transform 0.3s ease; /* Transition for hover effect */
+}
+
+.about-content p:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* Footer Section */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #333; /* Dark footer background */
+    color: white; /* Light text color */
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    .about-content h2 {
+        font-size: 20px; /* Smaller heading on mobile */
+    }
+
+    .about-content p {
+        font-size: 16px; /* Smaller text on mobile */
+    }
+}
